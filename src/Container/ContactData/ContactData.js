@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import {useDispatch, useSelector} from "react-redux";
 import './ContactData.css';
-import Spinner from "../../../Components/UI/Spinner/Spinner";
-import Button from "../../../Components/UI/Button/Button";
+import Spinner from "../../Components/UI/Spinner/Spinner";
+import Button from "../../Components/UI/Button/Button";
 import {useHistory} from "react-router-dom";
-import {fetchData} from "../../../store/Actions/MenuAction/menuActions";
-import {fullErase} from "../../../store/Actions/CartAction/cartActions";
+import {fetchData} from "../../store/Actions/MenuAction/menuActions";
+import {fullErase} from "../../store/Actions/CartAction/cartActions";
 
 const ContactData = ({onClose}) => {
     let history = useHistory();
